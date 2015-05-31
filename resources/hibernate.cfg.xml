@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		
+		<property name="connection.useUnicode">true</property>
+		<property name="connection.characterEncoding">UTF-8</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/pruthvi</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">1234</property>
+		<!-- 数据库方言 -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory
+</property>
+		
+		
+		<mapping resource="Pojo/createvacancypojo.hbm.xml"/>
+		<mapping resource="Pojo/appregpojo.hbm.xml"/>
+		<mapping resource="Pojo/interviewdetailspojo.hbm.xml"/>
+		<mapping resource="Pojo/placementdetailspojo.hbm.xml"/>
+		<mapping resource="Pojo/loginpojo.hbm.xml"/>
+		<mapping resource="Pojo/resumepojo.hbm.xml"/>
+		<mapping resource="Pojo/applypojo.hbm.xml"/>
+		
+			<!--
+			<mapping
+			resource="com/auction/model/businessobject/payment.hbm.xml"/>
+			<mapping
+			resource="com/auction/model/businessobject/tracking.hbm.xml"/>
+		-->
+	</session-factory>
+</hibernate-configuration>

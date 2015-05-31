@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  <hibernate-mapping>
+  <class name="Pojo.InterviewDetailsPojo" table="interview_schedule">
+  
+  <id name="vac_id" column="vac_id">
+  <generator class="native"></generator>
+  </id>
+  
+  <property name="interview_date"
+  				  column="interview_date"
+				  not-null="true"/>
+				  
+				   <property name="interview_time"
+  				  column="interview_time"
+				  not-null="true"/>
+				  
+				  <property name="interview_place"
+  				  column="interview_place"
+				  not-null="true"/>
+				  
+				  <property name="interview_department"
+  				  column="interview_department"
+				  not-null="true"/>
+				  
+				  <property name="interviewer_name"
+				  column="interviewer_name"
+				  not-null="true"/>
+				 			  
+  </class>
+  </hibernate-mapping>				  

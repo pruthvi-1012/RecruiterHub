@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="Pojo.PlacementDetailsPojo" table="placement_schedule">
+<id name="placement_id" column="placement_id">
+<generator class="native"></generator>  
+</id>
+
+<property name="clj_name" column="clj_name" not-null="true"></property>
+<property name="clj_address" column="clj_address" not-null="true"></property>
+<property name="placement_date" column="placement_date" not-null="true"></property>
+<property name="placement_time" column="placement_time" not-null="true"></property>
+<property name="contact_tpo" column="contact_tpo" not-null="true"></property>
+<property name="interview_department" column="interview_department" not-null="true"></property>
+<property name="interviewer_name" column="interviewer_name" not-null="true"></property>
+
+
+
+</class>  
+  
+  
+  
+  
+  
+  </hibernate-mapping>

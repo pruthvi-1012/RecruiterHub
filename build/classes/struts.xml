@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+    <struts>
+    <package name="default" extends="struts-default">
+    <action name="App" class="AppReg" method="insertdata">
+ 
+    <result name="success">upload_resume.jsp</result>
+    <result name="error">error.jsp</result>
+    <result name="input">ApplicantRegistration.jsp</result>
+    </action>
+    <action name="uploadresume" class="upload" method="insert">
+    <result name="success">ApplicantSuccess.jsp</result>
+   
+    <result name="error">error.jsp</result>
+    </action>
+   
+    
+    <action name="vacancy" class="CreateVacancy" method="insertdata">
+    <result name="success">hr_vac_success.jsp</result>
+    <result name="error">error.jsp</result>
+    </action>
+    
+     <action name="VacMgmt">
+    <result name="success">VacancyManagement.jsp</result>
+    <result name="error">error.jsp</result>
+    </action>
+   
+   <action name="CreateVacancy">
+   <result name="success">CreateVacancy.jsp </result>
+   </action>
+    
+    
+    <action name="ViewVacancy">
+    <result name="success">VacancyDetails</result>
+    </action>
+    
+    
+    
+    
+    <action name="interview" class="InterviewDetails" method="insertdata">
+    <result name="success">success.jsp</result>
+    <result name="error">error.jsp</result>
+    </action>
+    
+    <action name="doUpload" class="AppReg">
+		<result name="success">ApplicantRegistration.jsp</result>
+	
+	</action> 
+    <action name="placement" class="PlacementDetails" method="insertdata">
+    <result name="success">interviewer_success_created_placement.jsp</result>
+    <result name="error">error.jsp</result>
+    </action>
+    
+    
+    
+    
+    <action name="login" class="login" method="login">
+    <result name="success">ApplicantConsole.jsp</result>
+    <result name="admin">AdminConsole.jsp</result>
+    <result name="hr">HRconsole.jsp</result>
+    <result name="tech">InterviewerConsole.jsp</result>
+    <result name="error">error.jsp</result>
+    </action>
+    
+    <action name="login1" class="login" method="insertdata">
+    <result name="success">success.jsp</result>
+    </action>
+    
+    <action name="new" class="CreateVacancy" method="showdata">
+    <result name="success">show.jsp</result>
+    </action>
+    
+   
+    
+    <action name="pruthvi" class="CreateVacancy" method="gridview">
+    <result name="success">vac_detail_show.jsp</result>
+    </action>
+    
+    <action name="clickapply" class="click_apply">
+    <result name="success">Applicant_applied_vacancy.jsp</result>
+    </action> 
+    
+    <action name="display1" class="AppReg" method="display_apply">
+    <result name="success"> z2.jsp</result>
+    </action>
+  
+
+<action name="hrvacancyshow" class="CreateVacancy" method="gridview">
+<result name="success">hr_vac_details.jsp</result>
+</action>
+
+<action name="vac_delete" class="CreateVacancy" method="deletedata">
+<result name="success">admin_vacancy_success_delete.jsp</result>
+</action>
+
+<action name="vac_edit" class="CreateVacancy" method="updatedata">
+<result name="success">vac_edit.jsp</result>
+</action>
+
+<action name="resumeshow" class="upload" method="gridview">
+<result name="success">HR_view_resume.jsp</result>
+</action>
+
+<action name="hr_applicant_details" class="AppReg" method="showdata">
+<result name="success">hr_applicant_details.jsp</result> 
+</action>
+<action name="adminvacancyshow" class="CreateVacancy" method="gridview">
+<result name="success">admin_vac_detail.jsp</result> 
+</action>
+
+<action name="adminvacancyedit" class="CreateVacancy" method="gridview">
+<result name="success">admin_vacancy_edit.jsp</result> 
+</action>
+
+<action name="admin_placementshow" class="PlacementDetails" method="gridview">
+<result name="success">admin_placement_details.jsp</result> 
+</action>
+
+<action name="admin_placementedit" class="PlacementDetails" method="gridview">
+<result name="success">admin_placement_edit.jsp</result> 
+</action>
+
+<action name="placement_delete" class="PlacementDetails" method="deletedata">
+<result name="success">success.jsp</result> 
+</action>
+
+<action name="admin_interviewdetail" class="InterviewDetails" method="gridview">
+<result name="success">admin_interview_details.jsp</result> 
+</action>
+
+<action name="admin_interviewedit" class="InterviewDetails" method="gridview">
+<result name="success">admin_interview_edit.jsp</result> 
+</action>
+
+<action name="interview_delete" class="InterviewDetails" method="deletedata">
+<result name="success">success.jsp</result> 
+</action>
+
+<action name="getdata12" class="AppReg" method="showdata" >
+        	
+            <result name="success">abc.jsp</result>
+                       
+        </action>
+<action name="hr_vac_create" class="CreateVacancy">
+<result name="success">CreateVacancy.jsp</result> 
+</action>
+
+<action name="hr_vac_details" class="CreateVacancy" method="gridview">
+<result name="success">hr_vac_details.jsp</result> 
+</action>
+
+<action name="hr_create_schedule" class="InterviewDetails">
+<result name="success">interviewschedule.jsp</result> 
+</action>        
+
+<action name="hr_view_schedule" class="InterviewDetails" method="gridview">
+<result name="success">hr_view_interview.jsp</result> 
+</action>
+
+<action name="hr_delete_schedule" class="InterviewDetails" method="gridview">
+<result name="success">hr_delete_interview.jsp</result> 
+</action>
+
+<action name="hr_view_placement" class="PlacementDetails" method="gridview">
+<result name="success">hr_view_placement.jsp</result> 
+</action>
+
+
+<action name="hr_vac_edit" class="CreateVacancy" method="gridview">
+<result name="success">hr_vac_edit.jsp</result> 
+</action>
+
+<action name="interviewer_create_placement" class="PlacementDetails">
+<result name="success">placementschedule.jsp</result> 
+</action>
+
+
+    </package>
+    
+    
+    
+    </struts> 

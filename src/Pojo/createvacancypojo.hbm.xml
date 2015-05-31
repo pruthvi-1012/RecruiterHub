@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  <hibernate-mapping>
+  <class name="Pojo.CreateVacancyPojo" table="vacancy">
+  
+  <id name="vac_id" column="vac_id">
+  <generator class="native"></generator>
+  </id>
+  
+  <property name="vac_title"
+  				  column="vac_title"
+				  not-null="true"/>
+				  
+				   <property name="creation_date"
+  				  column="creation_date"
+				  not-null="true"/>
+				  
+				   <property name="closing_date"
+  				  column="closing_date"
+				  not-null="true"/>
+				  
+				   <property name="experiance"
+  				  column="experiance"
+				  not-null="true"/>
+				  
+				   <property name="functional_area"
+  				  column="functional_area"
+				  not-null="true"/>
+				  
+				   <property name="education"
+  				  column="education"
+				  not-null="true"/>
+				  
+				   <property name="specialization"
+  				  column="specialization"
+				  not-null="true"/>
+				  
+				   <property name="location"
+  				  column="location"
+				  not-null="true"/>
+				  
+				   
+				  
+				   <property name="telephone"
+  				  column="telephone"
+				  not-null="true"/>
+				  
+				  <property name="job_ref_no"
+  				  column="job_ref_no"
+				  not-null="true"/>
+				  
+				  <property name="no_vacancy" column="no_vacancy" not-null="true"></property>
+				  </class>
+				  </hibernate-mapping>
+				  
+				  
